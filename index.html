@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
+
+
+    <div style="display:none;">
+        <svg id="towerSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60" width="50" height="60">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60" width="50" height="60">
+                <rect x="10" y="50" width="30" height="10" fill="#7B9FD1"/>
+                <rect x="5" y="40" width="40" height="10" fill="#7B9FD1"/>
+                <rect x="10" y="0" width="30" height="40" fill="#B1C6E2"/>
+                <rect x="17" y="5" width="4" height="10" fill="#1F3247"/>
+                <rect x="29" y="5" width="4" height="10" fill="#1F3247"/>
+                <rect x="17" y="20" width="4" height="10" fill="#1F3247"/>
+                <rect x="29" y="20" width="4" height="10" fill="#1F3247"/>
+                <rect x="23" y="10" width="4" height="20" fill="#1F3247"/>
+                </svg>
+        </svg>
+    </div>
+
+    <div style="display:none;">
+        <svg id="enemySvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                <circle cx="10" cy="10" r="10" fill="#E74C3C"/>
+                <circle cx="6" cy="7" r="2" fill="#1F3247"/>
+                <circle cx="14" cy="7" r="2" fill="#1F3247"/>
+                <path d="M 6 13 Q 10 16, 14 13" stroke="#1F3247" stroke-width="1.5" fill="none"/>
+              </svg>
+        </svg>
+    </div>
+</body>
+</html>
